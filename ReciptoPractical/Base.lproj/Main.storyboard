@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReciptoPractical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="jBf-Wz-YmW">
+                                <rect key="frame" x="16" y="102" width="75" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="3PB-cY-zb4"/>
+                                    <constraint firstAttribute="height" constant="64" id="t48-sg-xqn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratandeep Supemarket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apy-CT-dz3">
+                                <rect key="frame" x="109" y="102" width="192" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KJQ-DQ-gIg"/>
+                                    <constraint firstAttribute="width" constant="192" id="UHj-0A-po5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1% cashback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbI-rc-5ib">
+                                <rect key="frame" x="109" y="127.99999999999999" width="101" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 welcome bonus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe5-vd-3BH">
+                                <rect key="frame" x="218" y="127.99999999999999" width="154" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claim Deals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBT-N0-Uby">
+                                <rect key="frame" x="16" y="189" width="96" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="9HB-bT-Up4"/>
+                                    <constraint firstAttribute="height" constant="21" id="B7M-HJ-H2p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SiP-om-Rdj">
+                                <rect key="frame" x="16" y="226" width="361" height="450"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="DpR-HB-aQc"/>
+                                    <constraint firstAttribute="width" constant="361" id="xdB-ca-NUI"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WCU-P4-e2H">
+                                    <size key="itemSize" width="154" height="177"/>
+                                    <size key="estimatedItemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="42P-ht-2of">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="177"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6qW-2x-LIx">
+                                            <rect key="frame" x="0.0" y="0.0" width="154" height="177"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.97105807065963745" green="0.95376521348953247" blue="0.98192304372787476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="154" height="177"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8hL-1b-yiI">
+                                        <rect key="frame" x="207" y="0.0" width="154" height="177"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FMB-cD-c9r">
+                                            <rect key="frame" x="0.0" y="0.0" width="154" height="177"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgr-dc-Yq7">
+                                <rect key="frame" x="0.0" y="670" width="393" height="165"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2C-3v-xsd">
+                                        <rect key="frame" x="30" y="8" width="341" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Share UPI Payment image" cornerStyle="medium">
+                                            <backgroundConfiguration key="background" strokeWidth="15">
+                                                <color key="backgroundColor" red="0.97232753038406372" green="0.97418171167373657" blue="0.92223125696182251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="BtnOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XcY-3J-qhH"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logi" translatesAutoresizingMaskIntoConstraints="NO" id="oNL-Zi-P7Y">
+                                        <rect key="frame" x="305" y="18" width="29" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPZ-rY-tdw">
+                                        <rect key="frame" x="30" y="81" width="341" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Scan Receipt" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" cornerRadius="19">
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="BtnOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yzb-Iv-9Ke"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-cr-EeS">
+                                <rect key="frame" x="7" y="51" width="50" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="d4t-rI-Jdc"/>
+                                    <constraint firstAttribute="height" constant="35" id="yGc-oO-hAa"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZbI-rc-5ib" firstAttribute="top" secondItem="apy-CT-dz3" secondAttribute="bottom" constant="5" id="4Z5-ce-8eO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SiP-om-Rdj" secondAttribute="trailing" constant="16" id="5nS-0G-9zs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fe5-vd-3BH" secondAttribute="trailing" constant="21" id="5uk-mY-U4c"/>
+                            <constraint firstItem="jBf-Wz-YmW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="D03-R2-U5B"/>
+                            <constraint firstItem="zgr-dc-Yq7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FOH-Y9-XiO"/>
+                            <constraint firstItem="ZbI-rc-5ib" firstAttribute="leading" secondItem="jBf-Wz-YmW" secondAttribute="trailing" constant="18" id="FrW-o5-0Sr"/>
+                            <constraint firstItem="Fe5-vd-3BH" firstAttribute="top" secondItem="apy-CT-dz3" secondAttribute="bottom" constant="5" id="HSO-yG-EYF"/>
+                            <constraint firstAttribute="bottom" secondItem="zgr-dc-Yq7" secondAttribute="bottom" constant="17" id="Iok-lW-tB5"/>
+                            <constraint firstItem="QBT-N0-Uby" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KVg-f2-j5A"/>
+                            <constraint firstItem="SiP-om-Rdj" firstAttribute="top" secondItem="QBT-N0-Uby" secondAttribute="bottom" constant="16" id="McS-Rk-bnj"/>
+                            <constraint firstItem="SiP-om-Rdj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RWD-ZZ-tvJ"/>
+                            <constraint firstItem="apy-CT-dz3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="WO5-Wf-r4c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SiP-om-Rdj" secondAttribute="bottom" constant="142" id="X22-dD-EPO"/>
+                            <constraint firstItem="QBT-N0-Uby" firstAttribute="top" secondItem="jBf-Wz-YmW" secondAttribute="bottom" constant="23" id="XYh-7E-OCR"/>
+                            <constraint firstItem="BC7-cr-EeS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="51" id="dEF-xH-ixJ"/>
+                            <constraint firstItem="SiP-om-Rdj" firstAttribute="top" secondItem="QBT-N0-Uby" secondAttribute="bottom" constant="16" id="kax-JE-m0S"/>
+                            <constraint firstItem="BC7-cr-EeS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="kci-tJ-0M9"/>
+                            <constraint firstItem="apy-CT-dz3" firstAttribute="leading" secondItem="jBf-Wz-YmW" secondAttribute="trailing" constant="18" id="lKK-eP-HiO"/>
+                            <constraint firstItem="zgr-dc-Yq7" firstAttribute="top" secondItem="QBT-N0-Uby" secondAttribute="bottom" constant="460" id="ld8-6k-xIp"/>
+                            <constraint firstItem="jBf-Wz-YmW" firstAttribute="top" secondItem="BC7-cr-EeS" secondAttribute="bottom" constant="16" id="oGK-5A-m9V"/>
+                            <constraint firstItem="jBf-Wz-YmW" firstAttribute="top" secondItem="BC7-cr-EeS" secondAttribute="bottom" constant="16" id="uHd-6V-8iT"/>
+                            <constraint firstItem="zgr-dc-Yq7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vgO-fM-RSN"/>
+                            <constraint firstItem="QBT-N0-Uby" firstAttribute="top" secondItem="jBf-Wz-YmW" secondAttribute="bottom" constant="23" id="vwX-8R-psG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImg" destination="jBf-Wz-YmW" id="Sf0-lG-smR"/>
+                        <outlet property="itemCollectionView" destination="SiP-om-Rdj" id="4KS-BO-cvk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="logi" width="225" height="225"/>
+        <image name="logo1" width="225" height="224"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
